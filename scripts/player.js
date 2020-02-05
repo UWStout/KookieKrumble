@@ -1,7 +1,9 @@
 class Player extends Phaser.Scene {
 
+    player;
+
     constructor(config) {
-        super(config);
+        super('player');
     }
 
     preload() {
@@ -9,52 +11,33 @@ class Player extends Phaser.Scene {
     }
 
     create(data) {
-        this.add.image(data.x, data.y, 'playerImage');
+        player = this.physics.add.image(400, 300, 'playerImage');
+        player.setCollideWorldBounds(true);
     }
 
-    update(time, delta) {
-        player.setVelocity(0);
+    // update(time, delta) {
+    //     this.move();
+    // }
 
-        if (input.left.isDown)
-        {
-            player.setVelocityX(-500);
-        }
-        else if (input.right.isDown)
-        {
-            player.setVelocityX(500);
-        }
-    
-        if (input.up.isDown)
-        {
-            player.setVelocityY(-500);
-        }
-        else if (input.down.isDown)
-        {
-            player.setVelocityY(500);
-        }
-    }
+    // move() {
+    //     player.setVelocity(0);
 
-}
+    //     if (input.left.isDown)
+    //     {
+    //         player.setVelocityX(-500);
+    //     }
+    //     else if (input.right.isDown)
+    //     {
+    //         player.setVelocityX(500);
+    //     }
 
-function updatePlayer()
-{
-    player.setVelocity(0);
-
-    if (input.left.isDown)
-    {
-        player.setVelocityX(-500);
-    }
-    else if (input.right.isDown)
-    {
-        player.setVelocityX(500);
-    }
-
-    if (input.up.isDown)
-    {
-        player.setVelocityY(-500);
-    }
-    else if (input.down.isDown)
-    {
-        player.setVelocityY(500);
-    }
+    //     if (input.up.isDown)
+    //     {
+    //         player.setVelocityY(-500);
+    //     }
+    //     else if (input.down.isDown)
+    //     {
+    //         player.setVelocityY(500);
+    //     }
+    // }
 }
