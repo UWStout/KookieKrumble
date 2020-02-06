@@ -1,7 +1,10 @@
+/*
+*   The scene class for Level 2
+*/
 class Level_2 extends TiledScene {
 
-    constructor(config) {
-        super('Level_2');
+    constructor(config, nextLevel) {
+        super('Level_2', Level_3);
     }
 
     preload() {
@@ -10,6 +13,7 @@ class Level_2 extends TiledScene {
     }
 
     create(data) {
+        // Generate the level
         //super.generateLevel();
     }
 

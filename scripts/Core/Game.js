@@ -16,6 +16,7 @@ let config = {
         init: init
     }
 };
+
 let game = new Phaser.Game(config);
 
 let input;
@@ -24,5 +25,8 @@ let input;
 // Boot the game
 function init() {
     input = this.input.keyboard.createCursorKeys();
+
+    // Add the initial level
+    // TODO: Make the game boot into a title screen
     game.scene.add('Level_1', Level_1, true);
 }
