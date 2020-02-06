@@ -4,15 +4,16 @@ class Player extends Phaser.GameObjects.Sprite {
     {
         super(scene, x, y);
 
+        this.setPosition(x, y);
+
         asyncImageLoad(this, "player", "Assets/Sprites/FloorTileRepeatable.png");
 
         // add dynamic physics body
         this.scene.physics.add.existing(this, false);
         this.body.setCollideWorldBounds(true);
 
+        this.scene.cameras.main.centerOn(x, y);
         this.scene.cameras.main.startFollow(this, true, 0.05, 0.05);
-
-        this.setPosition(x, y);
     }
 
     // Called once per frame
