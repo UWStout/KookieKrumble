@@ -1,5 +1,5 @@
 /*
-*   The player game object class handles all player input and action.
+*   The player game object class handles all player character input and state.
 */
 class Player extends Phaser.GameObjects.Sprite {
 

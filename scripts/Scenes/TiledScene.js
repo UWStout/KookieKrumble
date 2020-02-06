@@ -1,6 +1,7 @@
 /*
-*   The class that all levels inherit from.
-*   Handles unserializing the Tiled json files into game objects.
+*   The class that all level scene classes inherit from.
+*   Handles deserializing the Tiled editor json files into
+*   game objects in the scene.
 */
 class TiledScene extends Phaser.Scene {
 
