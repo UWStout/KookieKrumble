@@ -1,3 +1,7 @@
+/*
+*   The class that all levels inherit from.
+*   Handles unserializing the Tiled json files into game objects.
+*/
 class TiledScene extends Phaser.Scene {
 
     player;

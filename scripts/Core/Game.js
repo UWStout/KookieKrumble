@@ -1,6 +1,7 @@
 /*
-*   This file is the entry point of the game and boots the game into the initial scene.
-*
+*   This file defines the game and boots it into the initial scene.
+*   This file also holds important global variables that all other
+*   scripts can access.
 */
 
 // Global variables
@@ -19,6 +20,8 @@ let game = new Phaser.Game(config);
 
 let input;
 
+
+// Boot the game
 function init() {
     input = this.input.keyboard.createCursorKeys();
     game.scene.add('Level_1', Level_1, true);

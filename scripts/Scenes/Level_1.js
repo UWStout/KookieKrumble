@@ -1,3 +1,6 @@
+/*
+*   The scene class for Level 1
+*/
 class Level_1 extends TiledScene {
 
     constructor(config) {
