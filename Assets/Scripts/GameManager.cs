@@ -10,20 +10,23 @@ public class GameManager : MonoBehaviour
 
     public int BabyCookies = 0;
     public int TotalBabyCookies = 0;
-    public GameObject Text;
+    public GameObject CookiesText;
+    public GameObject DeathText;
     public string WinSendScreen;
+
+    public enum GameStates
+    {
+        Playing,
+        PlayerDead
+    }
+
+    private GameStates gameState = GameStates.Playing;
 
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            // This is a singleton
-            DestroyImmediate(this.gameObject);
         }
     }
 
@@ -43,10 +46,25 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Text.GetComponent<Text>().text = BabyCookies.ToString() + "/" + TotalBabyCookies.ToString() + " Cookies Left To Save";
+        CookiesText.GetComponent<Text>().text = BabyCookies.ToString() + "/" + TotalBabyCookies.ToString() + " Cookies Left To Save";
         if (BabyCookies == 0)
         {
             SceneManager.LoadScene(WinSendScreen);
         }
+
+        if (gameState == GameStates.PlayerDead)
+        {
+            if (Input.anyKeyDown)
+            {
+                SceneManager.LoadScene(Application.loadedLevel);
+            }
+        }
+    }
+
+    public void OnPlayerDeath()
+    {
+        Debug.Log("The player just died");
+        DeathText.SetActive(true);
+        gameState = GameStates.PlayerDead;
     }
 }

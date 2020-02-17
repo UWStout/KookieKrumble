@@ -78,6 +78,7 @@ public class PlayerController : MonoBehaviour
     void Die()
     {
         gameObject.SetActive(false);
+        GameManager.instance.OnPlayerDeath();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -100,8 +101,6 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.tag == "Hazards")
         {
-            print("Hazard Collision");
-
             Die();
         }
     }
