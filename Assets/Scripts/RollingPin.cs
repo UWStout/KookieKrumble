@@ -49,8 +49,7 @@ public class RollingPin : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Player") 
-            || collision.gameObject.layer == LayerMask.NameToLayer("Collectables"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             velocity = Vector2.zero;
         }
