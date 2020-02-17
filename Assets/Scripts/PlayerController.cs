@@ -92,13 +92,13 @@ public class PlayerController : MonoBehaviour
                 if (cookie.GetComponent<Collectable>().target != null)
                 {
                     Destroy(cookie);
-                    GameObject.Find("GameRunner").GetComponent<GameRunner>().BabyCookies -= 1;
+                    GameManager.instance.BabyCookies -= 1;
                 }
             }
 
 
         }
-        if (collision.gameObject.tag == "Hazard")
+        if (collision.gameObject.tag == "Hazards")
         {
             print("Hazard Collision");
 
