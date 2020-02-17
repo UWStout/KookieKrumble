@@ -14,12 +14,6 @@ TextureImporter:
   - first:
       213: -5197261093280518190
     second: SPR_chefWalkDown_3
-  - first:
-      213: 1215936842803273572
-    second: SPR_chefWalkDown_4
-  - first:
-      213: 4676960085839132330
-    second: SPR_chefWalkDown_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -120,111 +114,6 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 360
-        width: 240
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 811dc2d72541a4ca5bcec5117fbe5bf5
-      internalID: -598473157334894430
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_chefWalkDown_1
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 360
-        width: 240
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 813c483b27dc54960a919e193a3b9691
-      internalID: -3823850330596139152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_chefWalkDown_2
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 360
-        width: 240
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37247ec23434a4dd8a324c14e80b7e25
-      internalID: -6039085133616362800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_chefWalkDown_3
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 360
-        width: 240
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed5f2112269b64c538a5f10cb6b77ee0
-      internalID: -5197261093280518190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_chefWalkDown_4
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 360
-        width: 240
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20b8723558d344359990bb4de513bfc9
-      internalID: 1215936842803273572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_chefWalkDown_5
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
         width: 240
         height: 360
@@ -235,8 +124,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86e50f0b3e2e440b2b94abdd57dd6e7e
-      internalID: 4676960085839132330
+      spriteID: 6deb3b7a16f2749f6abfec58369c9b12
+      internalID: -598473157334894430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_chefWalkDown_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34cc243b60a645b2a823b01c1d7b4f4
+      internalID: -3823850330596139152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_chefWalkDown_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78eee98882a7423ba62243a9be19d9e
+      internalID: -6039085133616362800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_chefWalkDown_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d76697ef512a40dd9f1f7b295e07486
+      internalID: -5197261093280518190
       vertices: []
       indices: 
       edges: []
