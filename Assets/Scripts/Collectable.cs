@@ -134,5 +134,19 @@ public class Collectable : MonoBehaviour
     }
 
 
-    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Hazards")
+        {
+            rigidbody.velocity = new Vector2(0, 0);
+            boxCollider.isTrigger = true;
+            anim.SetInteger("State", 0);
+            anim.SetInteger("Moving", 0);
+            gameObject.layer = LayerMask.NameToLayer("Default");
+            target = null;
+        }
+    }
+
+
+
 }
