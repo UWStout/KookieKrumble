@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
         CookiesText.GetComponent<Text>().text = BabyCookies.ToString() + "/" + TotalBabyCookies.ToString() + " Cookies Left To Save";
         if (BabyCookies == 0)
         {
-            SceneManager.LoadScene("YouWin");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         if (gameState == GameStates.PlayerDead)
