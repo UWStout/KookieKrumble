@@ -14,12 +14,6 @@ TextureImporter:
   - first:
       213: -5197261093280518190
     second: SPR_chefWalkDown_3
-  - first:
-      213: 1215936842803273572
-    second: SPR_chefWalkDown_4
-  - first:
-      213: 4676960085839132330
-    second: SPR_chefWalkDown_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -130,7 +124,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daf3246bb77594779b042f0accdfb639
+      spriteID: 6deb3b7a16f2749f6abfec58369c9b12
       internalID: -598473157334894430
       vertices: []
       indices: 
@@ -151,7 +145,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a1c7a028a52b45c3bd0b2e23c53bbca
+      spriteID: d34cc243b60a645b2a823b01c1d7b4f4
       internalID: -3823850330596139152
       vertices: []
       indices: 
@@ -172,7 +166,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f24d23e9de961456cb1488862808d03a
+      spriteID: e78eee98882a7423ba62243a9be19d9e
       internalID: -6039085133616362800
       vertices: []
       indices: 
@@ -193,7 +187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 077cb3b55ed5242538e05cd221e06b09
+      spriteID: 6d76697ef512a40dd9f1f7b295e07486
       internalID: -5197261093280518190
       vertices: []
       indices: 
