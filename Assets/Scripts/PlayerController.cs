@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
                 if (cookie.GetComponent<Collectable>().target != null)
                 {
                     Destroy(cookie);
-                    GameObject.Find("GameRunner").GetComponent<GameRunner>().BabyCookies -= 1;
+                    GameManager.instance.BabyCookies -= 1;
                 }
             }
 
