@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
 
 
         }
-        if (collision.gameObject.tag == "Hazard")
+        if (collision.gameObject.tag == "Hazards")
         {
             print("Hazard Collision");
 
