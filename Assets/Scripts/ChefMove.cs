@@ -17,7 +17,6 @@ public class ChefMove : MonoBehaviour
 
     private bool MovingToTarget = true;
 
-    private int counter = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +39,6 @@ public class ChefMove : MonoBehaviour
 
             if (dist > 0.5)
             {
-                counter = 0;
 
                 anim.SetInteger("State", 2);
                 rigidbody.position = Vector2.MoveTowards(transform.position, CurrentTarget, speed * Time.deltaTime);
