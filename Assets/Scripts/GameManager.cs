@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     public int TotalBabyCookies = 0;
     public GameObject CookiesText;
     public GameObject DeathText;
-    public string WinSendScreen;
 
     public enum GameStates
     {
@@ -49,14 +48,14 @@ public class GameManager : MonoBehaviour
         CookiesText.GetComponent<Text>().text = BabyCookies.ToString() + "/" + TotalBabyCookies.ToString() + " Cookies Left To Save";
         if (BabyCookies == 0)
         {
-            SceneManager.LoadScene(WinSendScreen);
+            SceneManager.LoadScene("YouWin");
         }
 
         if (gameState == GameStates.PlayerDead)
         {
-            if (Input.anyKeyDown)
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
             {
-                SceneManager.LoadScene(Application.loadedLevel);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
     }
