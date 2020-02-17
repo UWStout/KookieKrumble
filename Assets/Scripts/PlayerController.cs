@@ -75,6 +75,10 @@ public class PlayerController : MonoBehaviour
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
 
+    void Die()
+    {
+        gameObject.SetActive(false);
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -93,6 +97,12 @@ public class PlayerController : MonoBehaviour
             }
 
 
+        }
+        if (collision.gameObject.tag == "Hazard")
+        {
+            print("Hazard Collision");
+
+            Die();
         }
     }
 }
