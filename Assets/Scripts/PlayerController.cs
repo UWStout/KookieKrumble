@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (vertical > 0)
         {
-            anim.SetInteger("Moving", 2);
+            anim.SetInteger("Moving", 3);
         }
         else
         {
