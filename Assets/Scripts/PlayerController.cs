@@ -14,13 +14,21 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spRender;
     private int counter = 0;
 
-    public float runSpeed = 20.0f;
+    private float initialRunSpeed;
+    public float runSpeed = 8.0f;
+    public float sprinkleSpeedBoost = 5f;
+    private ParticleSystem.ColorOverLifetimeModule smokeColor;
+    ParticleSystem.MinMaxGradient oldGradient;
 
     void Start()
     {
         spRender = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
+
+        initialRunSpeed = runSpeed;
+        smokeColor = Smoke.colorOverLifetime;
+        oldGradient = smokeColor.color;
     }
 
     void Update()
@@ -107,6 +115,40 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Hazards")
         {
             Die();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Sprinkle")
+        {
+            // Remove sprinkle
+            collision.gameObject.SetActive(false);
+
+            // Speed boost
+            runSpeed += sprinkleSpeedBoost;
+
+            // Smoke changes
+            Smoke.startLifetime += 0.1f;
+            Gradient gradient = new Gradient();
+            gradient.SetKeys(new GradientColorKey[] { new GradientColorKey(Color.blue, 0.0f), new GradientColorKey(Color.red, 1.0f) }, new GradientAlphaKey[] { new GradientAlphaKey(1.0f, 0.0f), new GradientAlphaKey(0.0f, 1.0f) });
+            smokeColor.color = gradient;
+
+            // Cooldown
+            StartCoroutine(SprinkleCooldown(oldGradient));
+        }
+    }
+
+    IEnumerator SprinkleCooldown(ParticleSystem.MinMaxGradient oldGradient)
+    {
+        yield return new WaitForSeconds(5f);
+        runSpeed -= sprinkleSpeedBoost;
+        Smoke.startLifetime -= 0.1f;
+
+        if (runSpeed == initialRunSpeed)
+        {
+            var smokeColor = Smoke.colorOverLifetime;
+            smokeColor.color = oldGradient;
         }
     }
 }
