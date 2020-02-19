@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-
     private Animator anim;
     public Transform target;
-    public int speed = 4;
+    public float speed = 4f;
     private Vector3 prevLoc;
     private SpriteRenderer spRender;
     private BoxCollider2D boxCollider;
@@ -22,6 +21,8 @@ public class Collectable : MonoBehaviour
         spRender = GetComponent<SpriteRenderer>();
         prevLoc = transform.position;
         boxCollider = GetComponent<BoxCollider2D>();
+
+        GameManager.instance.player.playerBoostingEvent.AddListener(UpdateSpeed);
     }
 
 
@@ -147,4 +148,16 @@ public class Collectable : MonoBehaviour
         }
     }
 
+    void UpdateSpeed()
+    {
+        // Speed boost
+        speed += GameManager.instance.player.sprinkleSpeedBoost / 2f;
+
+    }
+
+    IEnumerator SprinkleCooldown()
+    {
+        yield return new WaitForSeconds(7f);
+        speed -= GameManager.instance.player.sprinkleSpeedBoost / 2f;
+    }
 }

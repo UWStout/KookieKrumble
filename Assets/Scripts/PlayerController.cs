@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D body;
+
+    public UnityEvent playerBoostingEvent;
 
     public ParticleSystem Smoke;
     float horizontal;
@@ -124,6 +127,9 @@ public class PlayerController : MonoBehaviour
         {
             // Remove sprinkle
             collision.gameObject.SetActive(false);
+
+            // Boost event
+            playerBoostingEvent.Invoke();
 
             // Speed boost
             runSpeed += sprinkleSpeedBoost;
