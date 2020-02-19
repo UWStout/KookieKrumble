@@ -79,7 +79,7 @@ public class ChefMove : MonoBehaviour
                 }
                 else if (currVel.y * 100000 > 0)
                 {
-                    anim.SetInteger("Moving", 2);
+                    anim.SetInteger("Moving", 3);
                 }
             } else
             {
