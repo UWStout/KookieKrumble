@@ -231,6 +231,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a73b36796b572540bb9ad487b24d5a2, type: 3}
+--- !u!4 &69371390 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9223091426337104852, guid: 8a73b36796b572540bb9ad487b24d5a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 69371389}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &154161140
 GameObject:
   m_ObjectHideFlags: 0
@@ -13814,6 +13820,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4202594920308558501, guid: 8e2ecb89cf38e7046a19df7b2f5f36bc,
+        type: 3}
+      propertyPath: cookiePlayer
+      value: 
+      objectReference: {fileID: 69371390}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e2ecb89cf38e7046a19df7b2f5f36bc, type: 3}
 --- !u!1001 &7518412968166856512
