@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: -4951698494395810626
     second: SPR_cookieWalkUp_3
+  - first:
+      213: 577285148269424028
+    second: SPR_cookieWalkUp_4
+  - first:
+      213: 2693620556499315072
+    second: SPR_cookieWalkUp_5
+  - first:
+      213: -2585427455443562443
+    second: SPR_cookieWalkUp_6
+  - first:
+      213: -5395692986542570437
+    second: SPR_cookieWalkUp_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -114,6 +126,111 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862a80b36dc8440d09339e1080e95216
+      internalID: 5691790511379497905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_cookieWalkUp_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311c1a202ad1e481bacb97a9b13607dc
+      internalID: 7532777497392896800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_cookieWalkUp_2
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c08df1545d184323a396ba8df5e7c56
+      internalID: -892442403474796591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_cookieWalkUp_3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42975393aefe94a4185922ff47306f55
+      internalID: -4951698494395810626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_cookieWalkUp_4
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 360
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a9c34eb078c49caa3aed9c2dbec047
+      internalID: 577285148269424028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_cookieWalkUp_5
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 360
         height: 360
@@ -124,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6469d722f33c14e23a7ee71f03ddc3a7
-      internalID: 5691790511379497905
+      spriteID: ea6cc0460bccc464db51ee05f3ef679f
+      internalID: 2693620556499315072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPR_cookieWalkUp_1
+      name: SPR_cookieWalkUp_6
       rect:
         serializedVersion: 2
         x: 360
@@ -145,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c78ee97776d644df6a2ca7c785b928e5
-      internalID: 7532777497392896800
+      spriteID: f28c4258f4881431680bb39af5c063f4
+      internalID: -2585427455443562443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPR_cookieWalkUp_2
+      name: SPR_cookieWalkUp_7
       rect:
         serializedVersion: 2
         x: 720
@@ -166,29 +283,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d875e335a2d314f86ab6732dba70293d
-      internalID: -892442403474796591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_cookieWalkUp_3
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 0
-        width: 360
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1f46f7a8e3e944699859f8d9aa6370a
-      internalID: -4951698494395810626
+      spriteID: 47e6e20962fb84b198e7abf30cd4180f
+      internalID: -5395692986542570437
       vertices: []
       indices: 
       edges: []
