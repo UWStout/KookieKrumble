@@ -53,7 +53,7 @@ public class RollingPin : MonoBehaviour
         {
             velocity = Vector2.zero;
         }
-        else
+        else if (collision.gameObject.tag != "BabyCookie")
         {
             // Reverse velocity direction
             velocity = -velocity;

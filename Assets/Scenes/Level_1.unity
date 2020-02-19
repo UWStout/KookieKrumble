@@ -13096,7 +13096,7 @@ PrefabInstance:
     - target: {fileID: 8036046935753817043, guid: 5380930363ce67e408b1770ea58ef11b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8036046935753817043, guid: 5380930363ce67e408b1770ea58ef11b,
         type: 3}
@@ -13434,6 +13434,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Baby1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432023453723470114, guid: bede7ac6bbe49f5488fcd5267154da82,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2432023453723469535, guid: bede7ac6bbe49f5488fcd5267154da82,
         type: 3}
@@ -14002,7 +14007,7 @@ PrefabInstance:
     - target: {fileID: 8036046935753817043, guid: 5380930363ce67e408b1770ea58ef11b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8036046935753817043, guid: 5380930363ce67e408b1770ea58ef11b,
         type: 3}
