@@ -55,7 +55,14 @@ public class GameManager : MonoBehaviour
     {
         CookiesText.GetComponent<Text>().text = BabyCookies.ToString() + "/" + TotalBabyCookies.ToString() + " Cookies Left To Save";
 
-        if (BabyCookies == 0 || Input.GetKeyDown(KeyCode.BackQuote))
+#if DEVELOPMENT_BUILD || UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.BackQuote))
+        {
+            BabyCookies = 0;
+        }
+#endif
+
+        if (BabyCookies == 0)
         {
             WinImage.SetActive(true);
             gameState = GameStates.LevelBeat;
