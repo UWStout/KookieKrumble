@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public int BabyCookies = 0;
     public int TotalBabyCookies = 0;
     public GameObject CookiesText;
-    public GameObject DeathText;
+    public GameObject DeathImage;
 
     public enum GameStates
     {
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
     public void OnPlayerDeath()
     {
         Debug.Log("The player just died");
-        DeathText.SetActive(true);
+        DeathImage.SetActive(true);
         gameState = GameStates.PlayerDead;
     }
 }
