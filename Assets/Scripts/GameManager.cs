@@ -12,11 +12,13 @@ public class GameManager : MonoBehaviour
     public int TotalBabyCookies = 0;
     public GameObject CookiesText;
     public GameObject DeathImage;
+    public GameObject WinImage;
 
     public enum GameStates
     {
         Playing,
-        PlayerDead
+        PlayerDead,
+        LevelBeat
     }
 
     private GameStates gameState = GameStates.Playing;
@@ -46,16 +48,27 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         CookiesText.GetComponent<Text>().text = BabyCookies.ToString() + "/" + TotalBabyCookies.ToString() + " Cookies Left To Save";
+
         if (BabyCookies == 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            WinImage.SetActive(true);
+            gameState = GameStates.LevelBeat;
         }
 
         if (gameState == GameStates.PlayerDead)
         {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
+        if (gameState == GameStates.LevelBeat)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                Debug.Log("The player beat level " + SceneManager.GetActiveScene().buildIndex);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                gameState = GameStates.Playing;
             }
         }
     }
