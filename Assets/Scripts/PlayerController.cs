@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     private float initialRunSpeed;
     public float runSpeed = 8.0f;
-    public float sprinkleSpeedBoost = 5f;
+    public float sprinkleSpeedBoost = 3f;
     private ParticleSystem.ColorOverLifetimeModule smokeColor;
     ParticleSystem.MinMaxGradient oldGradient;
 
@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator SprinkleCooldown(ParticleSystem.MinMaxGradient oldGradient)
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(7f);
         runSpeed -= sprinkleSpeedBoost;
         Smoke.startLifetime -= 0.1f;
 
