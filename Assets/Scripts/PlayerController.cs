@@ -14,8 +14,8 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spRender;
     private int counter = 0;
 
-    public float initialRunSpeed;
-    private float runSpeed = 8.0f;
+    private float initialRunSpeed;
+    public float runSpeed = 8.0f;
     public float sprinkleSpeedBoost = 5f;
     private ParticleSystem.ColorOverLifetimeModule smokeColor;
     ParticleSystem.MinMaxGradient oldGradient;
