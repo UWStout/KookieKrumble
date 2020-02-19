@@ -17,7 +17,6 @@ public class ChefMove : MonoBehaviour
 
     private bool MovingToTarget = true;
 
-    private int counter = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +31,7 @@ public class ChefMove : MonoBehaviour
 
     // 0 idle,,,,, 1 down,,,,,, 2 right,,,,, 3 left,,,,, 4 up
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (CurrentTarget != null)
         {
@@ -40,10 +39,9 @@ public class ChefMove : MonoBehaviour
 
             if (dist > 0.5)
             {
-                counter = 0;
 
                 anim.SetInteger("State", 2);
-                rigidbody.position = Vector2.MoveTowards(transform.position, CurrentTarget, speed * Time.deltaTime);
+                rigidbody.position = Vector2.MoveTowards(transform.position, CurrentTarget, speed * Time.fixedDeltaTime);
 
                 //Vector3 direction = target.position - transform.position;
                 //rigidbody.AddRelativeForce(direction.normalized * speed, ForceMode2D.Force);
