@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public GameObject DeathImage;
     public GameObject WinImage;
 
+    public PlayerController player;
+
     public enum GameStates
     {
         Playing,
@@ -31,6 +33,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +48,6 @@ public class GameManager : MonoBehaviour
             BabyCookies += 1;
             TotalBabyCookies += 1;
         }
-
     }
 
     // Update is called once per frame
