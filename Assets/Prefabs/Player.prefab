@@ -4872,7 +4872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Smoke: {fileID: 9223091425599501270}
   runSpeed: 8
-  sprinkleSpeedBoost: 5
+  sprinkleSpeedBoost: 3
 --- !u!50 &9223091426337104853
 Rigidbody2D:
   serializedVersion: 4
