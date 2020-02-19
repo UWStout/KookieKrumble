@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 
         if (BabyCookies == 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            WinImage.SetActive(true);
             gameState = GameStates.LevelBeat;
         }
 
@@ -66,9 +66,8 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                Debug.Log("The player peat level " + SceneManager.GetActiveScene().buildIndex);
+                Debug.Log("The player beat level " + SceneManager.GetActiveScene().buildIndex);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                DeathImage.SetActive(true);
                 gameState = GameStates.Playing;
             }
         }
@@ -77,7 +76,7 @@ public class GameManager : MonoBehaviour
     public void OnPlayerDeath()
     {
         Debug.Log("The player just died");
-        WinImage.SetActive(true);
+        DeathImage.SetActive(true);
         gameState = GameStates.PlayerDead;
     }
 }
