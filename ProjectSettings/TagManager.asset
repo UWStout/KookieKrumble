@@ -7,6 +7,7 @@ TagManager:
   - BabyCookie
   - CookieJars
   - Hazards
+  - Hazard
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Particle
+    uniqueID: 3279306401
     locked: 0

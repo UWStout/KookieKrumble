@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D body;
 
+    public ParticleSystem Smoke;
     float horizontal;
     float vertical;
     float moveLimiter = 0.7f;
@@ -68,7 +69,11 @@ public class PlayerController : MonoBehaviour
 
         if (horizontal != 0 || vertical != 0)
         {
+            Smoke.enableEmission = true;
             counter = 0;
+        } else
+        {
+           Smoke.enableEmission = false;
         }
 
 
