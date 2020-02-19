@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
     {
         CookiesText.GetComponent<Text>().text = BabyCookies.ToString() + "/" + TotalBabyCookies.ToString() + " Cookies Left To Save";
 
-#if DEVELOPMENT_BUILD 
+#if DEVELOPMENT_BUILD || UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.BackQuote))
         {
             BabyCookies = 0;
