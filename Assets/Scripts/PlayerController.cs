@@ -101,7 +101,6 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "CookieJars")
         {
-            print("Collision");
             GameObject[] objs;
             objs = GameObject.FindGameObjectsWithTag("BabyCookie");
             foreach (GameObject cookie in objs)

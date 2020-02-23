@@ -88,7 +88,6 @@ public class GameManager : MonoBehaviour
 
     public void OnPlayerDeath()
     {
-        Debug.Log("The player just died");
         DeathImage.SetActive(true);
         gameState = GameStates.PlayerDead;
     }
