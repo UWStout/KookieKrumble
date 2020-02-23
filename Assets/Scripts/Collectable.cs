@@ -55,9 +55,13 @@ public class Collectable : MonoBehaviour
                         spRender.flipX = false;
                         anim.SetInteger("Moving", 2);
                     }
-                    else
+                    else if (currVel.y * 100000 < 0)
                     {
                         anim.SetInteger("Moving", 1);
+                    }
+                    else if (currVel.y * 100000 > 0)
+                    {
+                        anim.SetInteger("Moving", 3);
                     }
                 }
                 else if (currVel.x * 100000 < 0)
@@ -78,7 +82,7 @@ public class Collectable : MonoBehaviour
                 }
                 else if (currVel.y * 100000 > 0)
                 {
-                    anim.SetInteger("Moving", 2);
+                    anim.SetInteger("Moving", 3);
                 }
     
             }
