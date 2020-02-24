@@ -5,22 +5,20 @@ using UnityEngine;
 public class MoveUpAndDown : MonoBehaviour
 {
 
-    //adjust this to change speed
+    //Adjusts speed of arrow
     float speed = 5f;
-    //adjust this to change how high it goes
+    //Deciding how high the arrow goes
     float height = 0.5f;
 
     Vector3 pos;
-    // Start is called before the first frame update
     void Start()
     {
+        //Use local position because the arrow is a child of the cookie jar
         pos = transform.localPosition;
     }
 
-
     void Update()
     {
-        //get the objects current position and put it in a variable so we can access it later with less code
         //calculate what the new Y position will be
         float newY = Mathf.Sin(Time.time * speed);
         //set the object's Y to the new calculated Y
